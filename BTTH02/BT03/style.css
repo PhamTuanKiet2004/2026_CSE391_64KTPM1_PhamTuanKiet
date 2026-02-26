@@ -1,0 +1,112 @@
+html,body{height:100%}
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+  background: #fff;
+  color: #222;
+}
+.top-bar {
+  height: 12px;
+  background: #222;
+  margin-bottom: 18px;
+}
+.frame {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 6px solid #bfe9f7;
+  padding: 48px 64px;
+  position: relative;
+}
+.frame::before,
+.frame::after {
+  content: "";
+  position: absolute;
+  top: 48px;
+  height: calc(100% - 96px);
+  width: 4px;
+  background: #bfe9f7;
+}
+.frame::before {
+  left: 18px;
+}
+.frame::after {
+  right: 18px;
+}
+.title {
+  font-family: Inconsolata, monospace;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 6px 0 36px;
+}
+.content {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+.card {
+  width: 280px;
+  background: #fff;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+.card-title {
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+.card-text {
+  color: #888;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+.author {
+  font-size: 13px;
+  margin: 0;
+  color: #444;
+}
+.author a {
+  color: #2f7db6;
+  text-decoration: none;
+  font-weight: 600;
+}
+.article {
+  flex: 1;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.article p {
+  margin: 0 0 16px;
+}
+.highlight {
+  font-weight: 700;
+}
+@media (max-width: 880px) {
+  .frame {
+    padding: 28px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
